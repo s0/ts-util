@@ -7,10 +7,14 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    versionSpec: '10.x'
   displayName: 'Install Node.js'
 
 - script: |
     yarn install
     yarn run build
   displayName: 'install and build'
+
+- script: |
+    yarn run test
+  displayName: 'run tests'
