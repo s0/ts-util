@@ -1,6 +1,6 @@
 {
   "name": "get-relative-path",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Return the relative path from one path to another",
   "keyaords": [
     "relative",
