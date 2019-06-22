@@ -14,3 +14,7 @@ steps:
     yarn install
     yarn run build
   displayName: 'install and build'
+
+- script: |
+    yarn run test
+  displayName: 'run tests'
