@@ -65,6 +65,17 @@ describe('allTests()', function () {
       expect(getRelativePath('/data/orandea/test/aaa/', '/data/orandea/impl/bbb')).to.equal('../../impl/bbb');
     });
 
+    it('Node Example Relative', function () {
+      expect(getRelativePath('data/orandea/test/aaa/', 'data/orandea/impl/bbb')).to.equal('../../impl/bbb');
+    });
+
+    it('URL Example', function () {
+      expect(getRelativePath(
+        new URL('https://localhost/data/orandea/test/aaa/').pathname,
+        new URL('https://localhost/data/orandea/impl/bbb').pathname
+      )).to.equal('../../impl/bbb');
+    });
+
   });
 
   describe('Invalid Usage', function () {

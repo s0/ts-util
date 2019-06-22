@@ -1,6 +1,6 @@
 /**
  * Work out what the relative path to get from from to to is.
- * I.e. Starting at "from", what path would lead us to "to".
+ * i.e. Starting at "from", what path would lead us to "to".
  *
  * For this to work, either both baths need to be absolute
  * (i.e. starting with "/") or both start from the same
@@ -8,7 +8,7 @@
  *
  * Similar to Node.js's path.relative():
  * https://nodejs.org/api/path.html#path_path_relative_from_to
- * but works otside the context of a filesystem, and assumes
+ * but works outside the context of a filesystem, and assumes
  * all paths are POSIX-style (so should work well for URLs).
  */
 function relative(from: string, to: string) {
